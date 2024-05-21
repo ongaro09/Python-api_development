@@ -1,0 +1,8 @@
+Flask >= 1.0.3
+httpie >= 1.0.2
+
+As at the time of this exercise, I had the following versions:
+Python == 3.10.12
+Flask == 2.0.1
+Werkzeug == 2.0.2
+httpie == 3.2.2
