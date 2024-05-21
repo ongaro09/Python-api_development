@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-
+"""
+ Defines a Flask web application with endpoints for retrieving,
+ creating, and updating recipes
+"""
 from flask import Flask, jsonify, request
 from http import HTTPStatus
 
@@ -42,7 +45,7 @@ def create_recipe():
     description = data.get('description')
 
     recipe = {
-        'id': len(recipes + 1),
+        'id': len(recipes) + 1,
         'name': name,
         'description': description
     }
@@ -64,7 +67,7 @@ def update_recipe(recipe_id):
     recipe.update(
         {
             'name': data.get('name'),
-            'descpription': data.get('description')
+            'description': data.get('description')
         }
     )
 
